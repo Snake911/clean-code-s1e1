@@ -5,33 +5,33 @@
   <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
   <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
 </head>
-<body>
+<body class="page">
   <div class="header">
     <img class="header_cover" src="./eisenhower-matrix.jpg">
     <a class="header_link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
   </div>
   <div class="app">    
-    <div class="part">
-      <label class="part_head" for="task_new">Add Item</label>
+    <div class="part part_new-task">
+      <label class="part_head task_label__new" for="task_new">Add Item</label>
       <div class="task">
-        <input id="task_new" class="task_text" type="text"><button>Add</button>
+        <input id="task_new" class="task_text task_input" type="text"><button class="task_btn">Add</button>
       </div>
     </div>
     <div class="part">
       <h3 class="part_head">Todo</h3>
       <ul class="tasks_list" id="task__incomplete">
         <li class="task">
-          <input type="checkbox"><label class="task_text">Pay Bills</label>
-          <input type="text" class="task_text"><button class="task_btn-edit">Edit</button>
-          <button class="task_btn-remove">
-            <img src="./remove.svg">
+          <input class="task_checkbox" type="checkbox"><label class="task_text task_label">Pay Bills</label>
+          <input type="text" class="task_text task_input"><button class="task_btn task_btn-edit">Edit</button>
+          <button class="task_btn task_remove">
+            <img class="task_remove-img" src="./remove.svg">
           </button>
         </li>
         <li class="task task__edit">
-          <input type="checkbox"><label class="task_text">Go Shopping</label>
-          <input type="text" value="Go Shopping" class="task_text"><button class="task_btn-edit">Save</button>
-          <button class="task_btn-remove">
-            <img src="./remove.svg">
+          <input class="task_checkbox" type="checkbox"><label class="task_text task_label">Go Shopping</label>
+          <input type="text" value="Go Shopping" class="task_text task_input"><button class="task_btn task_btn-edit">Save</button>
+          <button class="task_btn task_remove">
+            <img class="task_remove-img" src="./remove.svg">
           </button>
         </li>
       </ul>
@@ -40,10 +40,10 @@
       <h3 class="part_head">Completed</h3>
       <ul class="tasks_list" id="tasks__complete">
         <li class="task">
-          <input type="checkbox" checked><label class="task_text">See the Doctor</label>
-          <input type="text" class="task_text"><button class="task_btn-edit">Edit</button>
-          <button class="task_btn-remove">
-            <img src="./remove.svg">
+          <input class="task_checkbox" type="checkbox" checked><label class="task_text task_label">See the Doctor</label>
+          <input type="text" class="task_text task_input"><button class="task_btn task_btn-edit">Edit</button>
+          <button class="task_btn task_remove">
+            <img class="task_remove-img" src="./remove.svg">
           </button>
         </li>
       </ul>

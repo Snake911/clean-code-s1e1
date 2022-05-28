@@ -1,5 +1,5 @@
 /* Basic Style */
-body {
+.page {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
@@ -35,17 +35,17 @@ body {
 .task-row-wrapper {
   display: flex;
 }
-ul {
+.tasks_list {
   margin:0;
   padding: 0px;
 }
-li, h3 {
+li {
   list-style:none;
 }
 input,button{
   outline:none;
 }
-button {
+.task_btn {
   background: none;
   border: 0px;
   color: #888;
@@ -54,7 +54,7 @@ button {
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
-button:hover {
+.task_btn:hover {
   color: #3a3A3a;
 }
 /* Heading */
@@ -67,7 +67,7 @@ button:hover {
   margin: 0;
   text-transform: uppercase;
 }
-input[type="text"] {
+.task_input {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -79,16 +79,16 @@ input[type="text"] {
   font-family: Lato, sans-serif;
   color: #888;
 }
-input[type="text"]:focus {
+.task_input:focus {
   color: #333;
 }
 
 /* New Task */
-label[for="task_new"] {
+.task_label__new {
   display: block;
   margin: 0 0 20px;
 }
-input#task_new {
+#task_new {
   width: 318px;
 }
 
@@ -102,47 +102,44 @@ input#task_new {
   justify-content: space-between;
   align-items: center;
 }
-.task > * {
-  vertical-align: middle;
-}
 
-.task > input[type="checkbox"] {
+.task_checkbox {
   margin: 0 10px;
 }
-.task > label {
+.task_label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
-.task >  input[type="text"] {
+.task_input {
   width: 226px
 }
-button.task_btn-remove img {
+.task_remove-img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
-button.task_btn-remove img:hover {
+.task_remove-img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-ul#tasks__complete label {
+#tasks__complete .task_label {
   text-decoration: line-through
   color: #888;
 }
 
 /* Edit Task */
-ul .task input[type=text] {
+.tasks_list .task_input {
   display:none
 }
 
-ul .task.task__edit input[type=text] {
+.task__edit .task_input {
   display:inline-block;
   width:224px
 }
 
-ul .task.task__edit label {
+.task__edit .task_label {
   display:none;
 }
