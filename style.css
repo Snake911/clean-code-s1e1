@@ -101,11 +101,6 @@ button {
 }
 
 /* New Task */
-.task_label__new {
-  display: block;
-  margin: 0 0 20px;
-}
-
 #task_new {
   width: 318px;
 }
