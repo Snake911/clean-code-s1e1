@@ -131,7 +131,7 @@ button {
 }
 
 .task_remove {
-  background: url('./remove.svg') no-repeat center transparent;
+  background: url("./remove.svg") no-repeat center transparent;
   background-size: contain;
   height: 2em;
   transform: rotateZ(45deg);
